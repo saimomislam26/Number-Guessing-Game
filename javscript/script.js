@@ -11,10 +11,12 @@ let tbody1 = document.querySelector('#body1');
 let container = document.querySelector('.container');
 let body = document.querySelector('.input-group');
 let countdown = document.querySelector('.counter');
+let reloads = document.querySelector('#button-addon')
 
 //eventlistener
 
 buttons.addEventListener('click', savenumber);
+reloads.addEventListener('click',reloadpage);
 
 
 
@@ -421,6 +423,11 @@ function removealert() {
         currentdiv.remove();
     }
     clearTimeout(myvar);
+}
+
+
+function reloadpage(){
+    window.location.reload();
 }
 
 
