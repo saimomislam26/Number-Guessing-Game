@@ -51,7 +51,20 @@ function savenumber() {
             showalertbig('VAi KICHU EKTA DEN PLZ...', 'danger')
         }
         else {
+
+            if (count == 4 && flag == 1) {
+                showalertbig('ALREADY JITE GESEN', 'success');
+                number.value = ''
+            }
+
+
+
             count++;
+            if (count > 3 && flag == 0) {
+                showalertbig('SOB CHANCE SESH.RELOAD DIYE ABAR KHELEN', 'danger');
+                number.value = ''
+            }
+
 
             if (count <= 3) {
                 countdown.innerHTML--;
@@ -376,7 +389,7 @@ function savenumber() {
                 }
             }
 
-        
+
         }
     }
     else {
