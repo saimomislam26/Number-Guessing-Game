@@ -22,46 +22,62 @@
 </head>
 
 <body>
-    <div class="divalert">
-
-    </div>
     <div class="container mt-5">
-        <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Enter a number between 1 to 10" aria-label="Recipient's username" aria-describedby="button-addon2" id="input">
-            <button class="btn btn-outline-secondary" type="button" id="button-addon2 " >Guess</button>
-          </div>
+        <div class=" divalert">
 
-          <div >
-              <div class="row">
-                  <div class="col-6">
+            <h1 class="text-center text">Guessing <br> Game</h1>
+            <hr>
+        </div>
+
+        <div>
+
+            <h1 class="text-center text1">Chance Left</h1>
+        
+            <h1 class="text-center counter">
+                3
+            </h1>
+
+        </div>
+
+        
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Enter a number between 1 to 10"
+                aria-label="Recipient's username" aria-describedby="button-addon2" id="input">
+            <button class="btn btn-outline-danger font-weight-bolder" type="button" id="button-addon2 "> <b>Guess</b>
+            </button>
+        </div>
+
+        <div>
+            <div class="row">
+                <div class="col-6">
                     <table class="table  table-striped ">
                         <thead>
                             <tr>
-                              <th scope="col " class="text-center">Your Guesses</th>
-                              
+                                <th scope="col " class="text-center text font1">Your Guesses</th>
+
                             </tr>
-                          </thead>
-                          <tbody id = "body">
-                            
-                          </tbody>   
-                      </table>
-                  </div>
-                  <div class="col-6 ">
+                        </thead>
+                        <tbody id="body">
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-6 ">
                     <table class="table  table-striped ">
                         <thead>
                             <tr>
-                              <th scope="col " class="text-center image">BOT Guess</th>
-                              
+                                <th scope="col " class="text-center image text font1">BOT Guess</th>
+
                             </tr>
-                          </thead>
-                          <tbody id = "body1" class="text-center">
-                            
-                          </tbody>   
-                      </table>
-                  </div>
-              </div>
-            
-          </div>
+                        </thead>
+                        <tbody id="body1" class="text-center">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
     </div>
 
 
